@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <% if(success && success.length){ %>
+        <div class="alert alert-success alert-dismissible fade show">
+            <strong><%=success  %></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        
+        
+        <% } %>
+        
+        
+        <% if(error && error.length){ %>
+            <div class="alert alert-danger alert-dismissible fade show">
+                <strong><%=error  %></strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            
+            <% } %>
+    <form action="/login" method="POST">
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+        </div>
+            <button>Login</button>
+    </form>
+</body>
+
+
+</html>

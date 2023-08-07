@@ -1,0 +1,32 @@
+
+<aside class="d-flex flex-column flex-shrink-0 p-0 min-vh-100 start-0 top-0 mb-auto sidebar col-2" >
+    <div class=" mx-auto my-3 mb-4">
+        <img src="/images/logo.png" alt="logo" style="width: 100px;">
+    </div>
+    
+        <ul class="nav nav-pills flex-column ms-0">
+            <a href="/" class="text-decoration-none"><li class="nav-item border-4 border-start border-light py-3 text-center <%- activePage === '/activePage' ? 'active' : '' %>">Dashboard</li></a>
+            <a href="/employees" class="text-decoration-none"><li class="nav-item border-4 border-start border-light py-3 text-center <%- activePage === '/employees' ? 'active' : '' %>">Employee Profiles</li></a>
+            <a href="/leave-management" class="text-decoration-none"><li class="nav-item border-4 border-start border-light py-3 text-center <%- activePage === '/leave-management' ? 'active' : '' %>">Leave Management</li></a>
+            <a href="#" class="text-decoration-none"><li class="nav-item border-4 border-start border-light py-3 text-center <%- activePage === '' ? 'active' : '' %>">Application List</li></a>
+            <a href="/reports" class="text-decoration-none"><li class="nav-item border-4 border-start border-light py-3 text-center <%- activePage === '/reports' ? 'active' : '' %>">User Logs</li></a>
+            <a href="#" class="text-decoration-none"><li class="nav-item border-4 border-start border-light py-3 text-center <%- activePage === '' ? 'active' : '' %>">Settings</li></a>
+        </ul>
+
+        <form action="/logout" method="POST">
+            <button>logout</button>
+        </form>
+    
+        <div class="d-flex fixed-bottom m-4" style="width:fit-content;">
+            <div class="" >
+                <img src="/images/pic.jpg" alt=""
+                style="width:50px; height:50px;"
+                class="rounded-circle shadow">
+            </div>
+            <div class="align-items-center mx-3">
+                <p class="mb-1">Sample Employee</p>
+                <p class="mb-1" style="font-size:0.9em;">Position</p>
+            </div>
+        </div>
+    
+</aside>

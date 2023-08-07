@@ -1,0 +1,214 @@
+<% layout('/layouts/boilerplate') %>
+
+<div class="my-3">
+    <h3 class="page-header mt-4 ms-3">Employees</h3>
+</div>
+
+<section class="d-flex mx-3" style="max-height:75%;">
+    <div class="col-10 overflow-auto">
+        <table class="table table-striped border rounded-3 ">
+            <thead>
+                <tr>
+                    <th class="text-success" style="width:15%;">Employee ID</th>
+                    <th class="text-success" style="width:15%;">First Name</th>
+                    <th class="text-success" style="width:15%;">last Name</th>
+                    <th class="text-success" style="width:10%;">Role</th>
+                    <th class="text-success" style="width:20%;">Department</th>
+                    <th class="text-success" style="width:20%;"></th>        
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let employee of employees) { %>
+                <tr>
+                    <td class="align-middle"><%=employee.employeeId  %></td>
+                    <td class="align-middle" style="font-size:0.9em;"><%=employee.firstName  %></td>
+                    <td class="align-middle" style="font-size:0.9em;"><%=employee.lastName  %></td>
+                    <td class="align-middle" style="font-size:0.9em;"><%=employee.designation %></td>
+                    <td class="align-middle" style="font-size:0.9em;"><%=employee.office  %></td>
+                    <td>
+                        <a href="/employees/<%=employee._id %>"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/<%= employee._id %>/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <% } %>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td class="align-middle" style="font-size:0.9em;">Test</td>
+                    <td>
+                        <a href="/employees/"><button class="btn btn-light border border-success p-1 w-50" style="font-size:0.9em;">View</button></a>
+                        <a href="/employees/update-employee-form"><button class="btn btn-success p-1 mx-2 w-25" style="font-size:0.9em;">Edit</button></a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="col-2 mx-3 card shadow" style="height:fit-content">
+        <h4 class="card-head mt-2 mx-3">Actions</h4>
+        <div class="card-body d-flex justify-content-center">
+            <a href="/employees/form"><button class="btn btn-success">Add Employee</button></a>
+        </div>
+    </div>
+    
+</section>
+
+
+
+<!-- <form action="/employees/ =employee._id ?_method=DELETE" method="POST"></form> -->

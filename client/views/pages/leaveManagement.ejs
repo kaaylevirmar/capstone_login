@@ -1,0 +1,48 @@
+<% layout('/layouts/boilerplate') %>
+
+    <div class="my-3">
+        <h3 class="page-header mt-4 ms-3">Leave Management</h3>
+    </div>
+
+<div class="d-flex" style="max-height: 80%">
+    <div class="col-lg-8 col-sm-12 border bg-light rounded-3 p-2 me-2 overflow-auto shadow" style="height:fit-content;">
+        <div class="mx-3">
+            <h4 class="text-success my-2">For Approval</h4>
+        </div>
+        <table class="table table-striped border rounded-3">
+            <thead>
+                <tr class="align-middle style="font-size: 0.9em;">
+                    <th class="text-success" style="width:20%;">Employee ID</th>
+                    <th class="text-success" style="width:30%;">Name</th>
+                    <th class="text-success" style="width:20%;">Role</th>
+                    <th class="text-success" style="width:20%;">Department</th>
+                    <th class="text-success" style="width:10%;"></th>      
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="align-middle" style="font-size: 0.8em;">
+                    <td>REG-1011-230001</td>
+                    <td>Sample Name</td>
+                    <td>Department Chief</td>
+                    <td>Executive Department</td>
+                    <td>
+                        <button class="btn btn-light border border-success text-success">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="col-lg-3 col-sm-6 border bg-light rounded-3 p-2 ms-2 shadow">
+        <div class="mx-3">
+            <h4 class="text-success my-2">Actions</h4>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="w-75">
+                <a href="/leave-management/new-leave-request"><button class="btn btn-success w-100 p-3">Request Leave</button></a>
+                <a href="#"><button class="btn btn-danger w-100 p-3 my-3">Delete Leave</button></a>
+            </div>
+            
+        </div>
+    </div>
+</div>
